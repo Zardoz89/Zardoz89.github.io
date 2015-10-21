@@ -53,9 +53,10 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: redcarpet
+markdown: kramdown #redcarpet
 highlighter: pygments
-permalink: /:title/
+permalink: pretty # /:title/
+paginate: 5
 
 # The release of Jekyll Now that you're using
 version: v1.1.0
@@ -70,6 +71,8 @@ gems:
 
 # Exclude these files from your production _site
 exclude:
+    - less
+    - node_modules
     - Gemfile
     - Gemfile.lock
     - LICENSE
